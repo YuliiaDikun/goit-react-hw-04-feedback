@@ -1,0 +1,40 @@
+.btnList {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  border: none;
+  margin: 2vw;
+  color: #2a2a2a;
+  font-weight: 700;
+  border-radius: 25px;
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0px 0px 4px #f16775;
+}
+
+.btn:hover {
+  outline: 0;
+  transition: background-color 1s ease;
+  background-color: #f16775;
+}
+.bad {
+ composes: btn;
+  background-color: #ffbac1;
+  transition: background-color 1s ease;
+}
+.good {
+composes: btn;
+  background-color: #b2ffb2;
+  transition: background-color 1s ease;
+}
+.neutral {
+composes: btn;
+  background-color: #eeffb2;
+  transition: background-color 1s ease;
+}
